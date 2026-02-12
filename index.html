@@ -51,13 +51,13 @@
       </div>
 
       <!-- banner-right -->
-      <div class="flex items-end relative">
+      <div class="flex items-end justify-end relative">
         <!-- banner image -->
         <img src="./images/banner.png" alt="" />
 
         <!-- banner rating -->
         <div
-          class="bg-white w-[255px] py-[18px] px-[26px] shadow-lg rounded-xl flex justify-between items-center absolute left-[90px]"
+          class="bg-white w-[255px] py-[18px] px-[26px] shadow-lg rounded-xl flex justify-between items-center absolute left-[50px] md:left-[200px]"
         >
           <figure>
             <img src="./images/banner-rating.png" alt="" />
@@ -277,7 +277,7 @@
     </section>
 
     <!-- ?News & Events section -->
-    <section class="max-w-[75%] mx-auto">
+    <section class="max-w-[81.25%] mx-auto">
       <!-- News & Events section header -->
       <div class="text-center mb-[70px]">
         <h2 class="text-[45px] font-extrabold text-[#1C1C1C]">News & Events</h2>
@@ -289,12 +289,10 @@
       </div>
       <!-- News & Events section cards Container -->
       <!-- justify-items-center justify-content-center -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center justify-content-center"
-      >
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[50px]">
         <!-- card 1 -->
         <div
-          class="bg-white p-6 border border-[#D2D2D2] max-w-[364px] space-y-2.5 rounded-xl"
+          class="bg-white p-6 border border-[#D2D2D2] w-[364px] space-y-2.5 rounded-xl"
         >
           <img src="./images/news-1.png" alt="" class="rounded-xl" />
           <p class="font-normal">Feb 05, 2027</p>
@@ -308,7 +306,7 @@
         </div>
         <!-- card 2 -->
         <div
-          class="bg-white p-6 border border-[#D2D2D2] max-w-[364px] space-y-2.5 rounded-xl"
+          class="bg-white p-6 border border-[#D2D2D2] w-[364px] space-y-2.5 rounded-xl"
         >
           <img src="./images/news-2.png" alt="" class="rounded-xl" />
           <p class="font-normal">Feb 05, 2027</p>
@@ -322,7 +320,7 @@
         </div>
         <!-- card 3 -->
         <div
-          class="bg-white p-6 border border-[#D2D2D2] max-w-[364px] space-y-2.5 rounded-xl"
+          class="bg-white p-6 border border-[#D2D2D2] w-[364px] space-y-2.5 rounded-xl"
         >
           <img src="./images/news-3.png" alt="" class="rounded-xl" />
           <p class="font-normal">Feb 05, 2027</p>
@@ -339,23 +337,22 @@
 
     <!-- footer section -->
     <footer class="bg-amber-100 mt-[130px]">
-      <div class="mx-auto max-w-[81.25%]">
+      <div class="max-w-[81.25%] mx-auto space-y-[100px]">
         <!--? 1st row -->
-        <div class="flex justify-between items-center pt-[100px]">
+        <div class="flex justify-between pt-[100px]">
           <img src="./images/cup.png" alt="" />
-          <div class="flex items-center gap-7">
-            <p>Ready to get strated?</p>
+          <div class="flex items-center gap-5 mr-[110px]">
+            <p>Ready to get started?</p>
             <button
-              class="py-4 px-5 text-white text-[20px] rounded-[10px] bg-linear-to-r from-[#FF1609] to-[#FF8938] mr-[30px]"
+              class="py-4 px-5 text-white text-[20px] rounded-[10px] bg-linear-to-r from-[#FF1609] to-[#FF8938]"
             >
               get Started
             </button>
           </div>
         </div>
-
         <!-- ?2nd row :parent -->
-        <div class="mt-[50px] flex justify-between">
-          <!--Quick links -->
+        <div class="mt-[50px] grid grid-cols-4">
+          <!--Quick links -1 -->
           <ul class="space-y-4">
             <li class="text-[20px] font-semibold text-[#1C1C1C]">
               Quick Links
@@ -365,43 +362,56 @@
             <li><a href=""> Insurance</a></li>
             <li><a href=""> Privacy Policy</a></li>
           </ul>
-          <!--Quick links -->
-          <ul class="space-y-4">
-            <li class="text-[20px] font-semibold text-[#1C1C1C]">
-              Quick Links
-            </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href=""> Insurance</a></li>
-            <li><a href=""> Privacy Policy</a></li>
-          </ul>
-          <!--Quick links -->
-          <ul class="space-y-4">
-            <li class="text-[20px] font-semibold text-[#1C1C1C]">
-              Quick Links
-            </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href=""> Insurance</a></li>
-            <li><a href=""> Privacy Policy</a></li>
-          </ul>
-          <!--Quick links -->
-          <ul class="space-y-4">
-            <li class="text-[20px] font-semibold text-[#1C1C1C]">
-              Quick Links
-            </li>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href=""> Insurance</a></li>
-            <li><a href=""> Privacy Policy</a></li>
-          </ul>
-        </div>
 
-        <!-- ?3rd row: -->
-        <p class="pt-[100px] pb-[130px] text-center font-medium text-[#494949]">
-          <small>© 2027 UIDesign.to - All rights reserved.</small>
-        </p>
+          <!--Quick links -2 -->
+          <ul class="space-y-4">
+            <li class="text-[20px] font-semibold text-[#1C1C1C]">
+              Our Service
+            </li>
+            <li><a href="">Life Insurance</a></li>
+            <li><a href="">Car Insurance</a></li>
+            <li><a href=""> Health Insurance</a></li>
+            <li><a href="">House Insurance</a></li>
+          </ul>
+
+          <!--Quick links -3 -->
+          <ul class="space-y-4">
+            <li class="text-[20px] font-semibold text-[#1C1C1C]">Help</li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+
+          <!-- Quick links -4 -->
+          <div class="space-y-4">
+            <h2 class="text-[30px] font-semibold">
+              Subscribe to our <br />
+              newsletter
+            </h2>
+            <input
+              type="text"
+              placeholder="Email address"
+              class="border-b pb-3 outline-0"
+            />
+            <button
+              class="w-8 h-8 text-white text-[20px] bg-linear-to-r from-[#FF1609] to-[#FF8938] mr-[30px] rounded-full"
+            >
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+
+            <div class="flex gap-6">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- ?3rd row: -->
+      <p
+        class="pt-[100px] pb-[130px] text-center text-[16px] font-medium text-[#494949]"
+      >
+        <span>© 2027 UIDesign.to - All rights reserved.</span>
+      </p>
     </footer>
   </body>
 </html>
